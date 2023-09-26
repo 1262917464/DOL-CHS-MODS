@@ -195,6 +195,7 @@ case "$VERSION" in
         fun_name
         IMG_PATH=$EXTRACT_DIR/assets/www/img
         HTML_PATH="$EXTRACT_DIR/assets/www/Degrees of Lewdity.html"
+	cat $VERSION
         fun_apk
     ;;
 esac
