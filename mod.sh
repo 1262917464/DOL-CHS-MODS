@@ -102,10 +102,11 @@ fun_apk() {
 # 处理MOD代码
 fun_check_code() {
 	echo '以下输出是ls命令'
+	ls
 	unzip ./assets/Degrees\ of\ Lewdity_TRANS_NPCS.zip
-	mv './Degrees\ of\ Lewdity_TRANS_NPCS.html' $HTML_PATH
+	mv './Degrees\ of\ Lewdity_TRANS_NPCS.html' "${HTML_PATH}"
 	echo '以下输出是md5验证'
-	md5sum $HTML_PATH
+	md5sum "${HTML_PATH}"
 
     if [ $(( MOD_CODE&1 )) -ne 0 ]
     then
