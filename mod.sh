@@ -102,7 +102,7 @@ fun_apk() {
 # 处理MOD代码
 fun_check_code() {
 	unzip ./assets/Degrees\ of\ Lewdity_TRANS_NPCS.zip
-	mv ./Degrees\ of\ Lewdity_TRANS_NPCS.html ./Degrees\ of\ Lewdity.html
+	mv ./Degrees\ of\ Lewdity_TRANS_NPCS.html $HTML_PATH
 
     if [ $(( MOD_CODE&1 )) -ne 0 ]
     then
