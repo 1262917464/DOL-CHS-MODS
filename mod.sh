@@ -101,6 +101,9 @@ fun_apk() {
 
 # 处理MOD代码
 fun_check_code() {
+	unzip ./assets/Degrees\ of\ Lewdity_TRANS_NPCS.zip
+	mv ./Degrees\ of\ Lewdity_TRANS_NPCS.html ./Degrees\ of\ Lewdity.html
+
     if [ $(( MOD_CODE&1 )) -ne 0 ]
     then
         echo 1-Start patch beautify...
@@ -195,7 +198,6 @@ case "$VERSION" in
         fun_name
         IMG_PATH=$EXTRACT_DIR/assets/www/img
         HTML_PATH="$EXTRACT_DIR/assets/www/Degrees of Lewdity.html"
-	cat $VERSION
         fun_apk
     ;;
 esac
